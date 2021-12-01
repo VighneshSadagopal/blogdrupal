@@ -1,6 +1,8 @@
 // Container
 .container {
     display: flex;
+    background: unset;
+    height: unset;
     .content {
         width: 87%;
         margin-right: 20px;

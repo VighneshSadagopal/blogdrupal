@@ -27,7 +27,9 @@
     transform: translateY(-8px); }
 
 .container {
-  display: flex; }
+  display: flex;
+  background: unset;
+  height: unset; }
   .container .content {
     width: 87%;
     margin-right: 20px;
@@ -131,8 +133,6 @@
     top: 52%;
     right: 7%;
     display: none; }
-    .main_navigation nav#block-usernamemenu.show {
-      display: block; }
     .main_navigation nav#block-usernamemenu ul {
       display: flex;
       flex-direction: column; }
@@ -156,6 +156,8 @@
           text-decoration: none; }
   .main_navigation .userside {
     padding: 7px 0px; }
+    .main_navigation .userside:hover #block-usernamemenu {
+      display: block; }
     .main_navigation .userside .user-name {
       color: white;
       margin-top: 15px; }

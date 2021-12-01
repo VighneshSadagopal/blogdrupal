@@ -17,3 +17,15 @@ node-article:
     js/visual.js: {}
   dependencies:
     - core/jquery
+
+form-pages:
+  version: VERSION
+  css:
+    theme:
+      css/formpages/style.css: {}
+
+loginpage:
+  version: VERSION
+  css:
+    theme:
+      css/loginpage/style.css: {}

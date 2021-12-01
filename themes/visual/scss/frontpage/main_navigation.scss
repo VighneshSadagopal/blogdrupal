@@ -14,9 +14,6 @@
         top: 52%;
         right: 7%;
         display: none;
-        &.show {
-            display: block;
-        }
         ul {
             display: flex;
             flex-direction: column;
@@ -48,6 +45,9 @@
     }
     .userside {
         padding: 7px 0px;
+        &:hover #block-usernamemenu {
+            display: block;
+        }
         .user-name {
             color: white;
             margin-top: 15px;

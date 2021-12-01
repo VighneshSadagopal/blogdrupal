@@ -8,6 +8,8 @@ function visual_preprocess_region(&$variables) {
  if (isset($variables['region']) && $variables['region'] == 'content') {
     $variables['attributes']['class'][] = 'article';
   }
+
+  
 }
 
 function visual_preprocess_node(&$variables) {
@@ -17,8 +19,41 @@ function visual_preprocess_node(&$variables) {
   }
 }
 function visual_preprocess_page(&$variables) {
+ 
   if (isset($variables['node']) && $variables['node']) {
     $variables['#attached']['library'][] = 'visual/node-article';
   }
+ 
+}
+function visual_preprocess_page__user__login(&$variables) {
+
+    $variables['#attached']['library'][] = 'visual/loginpage';
   
 }
+
+function visual_preprocess_page__user__register(&$variables) {
+  
+    $variables['#attached']['library'][] = 'visual/loginpage';
+  
+}
+function visual_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'user_login_form') {
+    $form['name']['#attributes']['placeholder'] = t('Username');
+    $form['pass']['#attributes']['placeholder'] = t('Password');
+  }
+  
+}
+
+function visual_preprocess_html__user__login(&$variables) {
+  
+    $variables['#attached']['library'][] = 'visual/form-pages';
+  
+}
+
+function visual_preprocess_html__node__add__article(&$variables) {
+  
+    $variables['#attached']['library'][] = 'visual/form-pages';
+  
+}
+
+

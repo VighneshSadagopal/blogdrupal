@@ -1,10 +1,13 @@
 .container .content {
   width: 100%;
   margin: unset;
-  position: relative; }
+  position: relative;
+  background: unset;
+  height: unset; }
   .container .content .article {
     width: 75%;
-    margin-left: 14%; }
+    margin-left: 14%;
+    position: unset; }
     .container .content .article #block-visual-page-title {
       position: absolute;
       top: 16%;
@@ -18,7 +21,7 @@
         width: unset;
         margin: unset; }
     .container .content .article article {
-      margin-top: 65%;
+      margin-top: 75%;
       padding: 30px;
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }

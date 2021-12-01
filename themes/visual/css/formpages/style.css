@@ -1,0 +1,51 @@
+.container {
+  display: block;
+  background: url(../../../../images/falls1.jpg) #00000075;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  height: 110vh; }
+  .container .content h1 {
+    width: unset;
+    margin: unset;
+    padding-top: 13px; }
+  .container .article {
+    width: 45%;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 6rem;
+    left: 68%; }
+    .container .article .js-form-item {
+      padding: 10px; }
+      .container .article .js-form-item input#edit-title-0-value {
+        width: 89%;
+        padding: 3px 15px;
+        outline: none; }
+      .container .article .js-form-item input#edit-field-tags-target-id {
+        width: 89%;
+        outline: none;
+        padding: 3px 15px; }
+      .container .article .js-form-item .form-text.required {
+        width: 89%;
+        outline: none;
+        padding: 3px 15px; }
+    .container .article #edit-actions {
+      padding: 10px; }
+    .container .article .button {
+      padding: 7px 13px;
+      color: white;
+      background: black;
+      border: none; }
+  .container #node-article-form label {
+    display: none; }
+  .container #node-article-form #edit-body-0-format-help {
+    display: none; }
+  .container #node-article-form .form-no-label {
+    display: none; }
+  .container #node-article-form .form-no-label {
+    display: none; }
+  .container #node-article-form .description {
+    display: none; }
+  .container #node-article-form .js-form-item-field-author-0-target-id {
+    display: none; }

@@ -1,0 +1,37 @@
+.container .article {
+  height: 75vh; }
+  .container .article ul {
+    list-style: none;
+    padding: unset; }
+  .container .article .js-form-item .form-text.required {
+    padding: 2px 7px;
+    width: 60%;
+    outline: none; }
+  .container .article .button {
+    width: 64%; }
+  .container .article .form-text {
+    width: 60%;
+    padding: 2px 7px;
+    outline: none; }
+
+.container #user-login-form {
+  padding-top: 30px; }
+  .container #user-login-form label {
+    display: none; }
+  .container #user-login-form .description {
+    display: none; }
+
+.container #user-register-form {
+  padding-top: 30px; }
+  .container #user-register-form label {
+    display: none; }
+  .container #user-register-form .description {
+    display: none; }
+  .container #user-register-form #edit-mail {
+    width: 60%;
+    padding: 2px 7px;
+    outline: none; }
+  .container #user-register-form summary {
+    display: none; }
+  .container #user-register-form .js-form-item-contact {
+    display: none; }
