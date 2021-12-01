@@ -1,0 +1,19 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      css/frontpage/style.css: {}
+  js:
+    js/visual.js: {}
+  dependencies:
+    - core/jquery
+
+node-article:
+  version: VERSION
+  css:
+    theme:
+      css/node_article/style.css: {}
+  js:
+    js/visual.js: {}
+  dependencies:
+    - core/jquery

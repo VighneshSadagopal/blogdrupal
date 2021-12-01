@@ -1,0 +1,67 @@
+<?php
+
+/**
+ * @file
+ * User display name module file.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * Implements hook_help().
+ */
+function user_display_name_help($route_name, RouteMatchInterface $route_match) {
+  $output = '';
+  if ($route_name === 'help.page.user_display_name') {
+    $output = '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t("This module adds a display name field to user entities to use instead of the username when displaying the user's name.") . '</p>';
+
+  }
+  return $output;
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function user_display_name_entity_base_field_info(EntityTypeInterface $entity_type) {
+  $fields = [];
+  if ($entity_type->id() === 'user') {
+    $fields['display_name'] = BaseFieldDefinition::create('text')
+      ->setLabel(t('Display Name'))
+      ->setTranslatable(TRUE);
+  }
+  return $fields;
+}
+
+/**
+ * Implements hook_form_HOOK_alter() for the "user_form".
+ */
+function user_display_name_form_user_form_alter(&$form, FormStateInterface $form_state) {
+  $user = $form_state->getFormObject()->getEntity();
+  $default = '';
+  if ($user->id() !== NULL) {
+    $default = $form_state->getValue('display_name', (string) $user->getDisplayName());
+  }
+  $form['display_name'] = [
+    '#type' => 'textfield',
+    '#title' => t('Display Name'),
+    '#description' => t('Preferred display name.'),
+    '#maxlength' => 128,
+    '#default_value' => $default,
+    // Add the field at the top of the edit form.
+    '#weight' => -20,
+  ];
+}
+
+/**
+ * Implements hook_user_format_name_alter().
+ */
+function user_display_name_user_format_name_alter(&$name, AccountInterface $account) {
+  if (isset($account->display_name) && !$account->display_name->isEmpty()) {
+    $name = $account->display_name->value;
+  }
+}

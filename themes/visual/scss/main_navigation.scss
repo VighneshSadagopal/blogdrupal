@@ -1,0 +1,39 @@
+// Main Navigation : 
+.main_navigation {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    nav#block-visual-main-menu {
+        margin: 0px 249px;
+    }
+    div {
+        display: flex;
+        justify-content: space-around;
+        #block-visual-branding {
+            margin: 7px;
+        }
+        ul {
+            display: flex;
+            width: fit-content;
+            li {
+                color: white;
+                list-style: none;
+                padding: 9px;
+                a {
+                    color: white;
+                    list-style: none;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .smallimg {
+        img {
+            border-radius: 50%;
+            margin-left: 5%;
+        }
+    }
+}

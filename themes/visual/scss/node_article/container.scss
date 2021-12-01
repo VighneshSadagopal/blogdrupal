@@ -1,0 +1,62 @@
+.container .content {
+    width: 100%;
+    margin: unset;
+    position: relative;
+    .article {
+        width: 75%;
+        margin-left: 14%;
+        #block-visual-page-title {
+            position: absolute;
+            top: 16%;
+            left: 0;
+            z-index: 1;
+            color: white;
+            font-size: xx-large;
+            width: 100%;
+            text-align: center;
+            h1 {
+                width: unset;
+                margin: unset;
+            }
+        }
+        article {
+            margin-top: 65%;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            div {
+                margin: 10px 0px;
+            }
+            img {
+                position: absolute;
+                top: 0%;
+                width: 100%;
+                left: 0%;
+                height: 45%;
+            }
+        }
+        #block-visual-local-tasks {
+            ul {
+                display: inline-flex;
+                li {
+                    list-style: none;
+                    padding: 7px;
+                    margin: 7px;
+                    background-color: black;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 500;
+                    }
+                }
+                ;
+            }
+        }
+        footer {
+            display: none;
+            &.span {
+                display: block;
+            }
+        }
+    }
+}

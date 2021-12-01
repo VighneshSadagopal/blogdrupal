@@ -1,0 +1,24 @@
+<?php 
+function visual_preprocess_region(&$variables) {
+
+  if (isset($variables['region']) && $variables['region'] == 'sidebar') {
+    $variables['attributes']['class'][] = 'sidecontent';
+  }
+
+ if (isset($variables['region']) && $variables['region'] == 'content') {
+    $variables['attributes']['class'][] = 'article';
+  }
+}
+
+function visual_preprocess_node(&$variables) {
+
+  if (isset($variables['node']) && $variables['node'] == 'field--node') {
+    $variables['attributes']['class'][] = 'node';
+  }
+}
+function visual_preprocess_page(&$variables) {
+  if (isset($variables['node']) && $variables['node']) {
+    $variables['#attached']['library'][] = 'visual/node-article';
+  }
+  
+}

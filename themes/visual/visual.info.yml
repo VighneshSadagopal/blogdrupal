@@ -1,0 +1,23 @@
+name: visual
+type: theme
+base theme: stable9
+description: '<p>Visual  light weight modern Drupal 8, 9 theme by Vighnesh <p>'
+package: Drupar
+core_version_requirement: ^8 || ^9
+screenshot: 'visual_select.jpg'
+
+libraries:
+  - visual/global-styling
+ 
+regions:
+  main_navigation: 'Main Navigation'
+  site_branding : 'Site Branding'
+  banner: 'Banner'
+  bannertext : 'Banner text'
+  content : 'Content'
+  sidebar : 'Sidebar'
+  footer1 : 'Footer 1'
+  footer2 : 'Footer 2'
+  footer3 : 'Footer 3'
+  footer4 : 'Footer 4'
+  copyright : 'Copyright'

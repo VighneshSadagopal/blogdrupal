@@ -1,0 +1,12 @@
+type: module
+name: User display name
+description: 'Adds a display name field to user entities.'
+package: user
+core_version_requirement: ^9
+dependencies:
+  - drupal:user
+
+# Information added by Drupal.org packaging script on 2021-10-08
+version: '1.0.1'
+project: 'user_display_name'
+datestamp: 1633666019

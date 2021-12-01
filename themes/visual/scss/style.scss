@@ -1,0 +1,25 @@
+@import "banner.scss";
+@import "container.scss";
+@import "footer.scss";
+@import "main_navigation.scss";
+@import "sidebar.scss";
+.feed-icon {
+    display: none;
+}
+
+html {
+    background-color: #f0f0f0;
+}
+
+html body {
+    margin: unset;
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+    padding: 7px 13px;
+    margin-top: 2px;
+    text-align: center;
+    width: 98%;
+}
