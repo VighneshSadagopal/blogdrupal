@@ -8,6 +8,10 @@
     width: 75%;
     margin-left: 14%;
     position: unset; }
+    @media screen and (max-width: 426px) {
+      .container .content .article {
+        width: 88%;
+        margin-left: 7%; } }
     .container .content .article #block-visual-page-title {
       position: absolute;
       top: 16%;
@@ -17,6 +21,10 @@
       font-size: xx-large;
       width: 100%;
       text-align: center; }
+      @media screen and (max-width: 426px) {
+        .container .content .article #block-visual-page-title {
+          top: 9%;
+          font-size: 17px; } }
       .container .content .article #block-visual-page-title h1 {
         width: unset;
         margin: unset; }
@@ -25,6 +33,9 @@
       padding: 30px;
       background-color: white;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+      @media screen and (max-width: 426px) {
+        .container .content .article article {
+          margin-top: 100%; } }
       .container .content .article article div {
         margin: 10px 0px; }
       .container .content .article article img {
@@ -33,6 +44,13 @@
         width: 100%;
         left: 0%;
         height: 45%; }
+        @media screen and (max-width: 426px) {
+          .container .content .article article img {
+            height: unset; } }
+      .container .content .article article .js-form-item-subject-0-value {
+        display: none; }
+      .container .content .article article .js-form-item-comment-body-0-value label {
+        display: none; }
     .container .content .article #block-visual-local-tasks ul {
       display: inline-flex; }
       .container .content .article #block-visual-local-tasks ul li {

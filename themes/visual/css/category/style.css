@@ -1,0 +1,28 @@
+form#views-exposed-form-category-page-1 {
+  position: absolute;
+  top: 56%;
+  font-size: 25px;
+  display: flex;
+  width: 100%;
+  left: 25%; }
+  @media screen and (max-width: 426px) {
+    form#views-exposed-form-category-page-1 {
+      top: 25%;
+      width: 75%; } }
+  @media screen and (min-width: 427px) and (max-width: 769px) {
+    form#views-exposed-form-category-page-1 {
+      top: 47%;
+      width: 75%; } }
+  form#views-exposed-form-category-page-1 label {
+    display: none; }
+  form#views-exposed-form-category-page-1 select#edit-tid {
+    width: 36rem;
+    padding: 9px 24px; }
+    @media screen and (max-width: 426px) {
+      form#views-exposed-form-category-page-1 select#edit-tid {
+        width: unset; } }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      form#views-exposed-form-category-page-1 select#edit-tid {
+        width: 20rem; } }
+  form#views-exposed-form-category-page-1 input#edit-submit-category {
+    height: 2.3rem; }

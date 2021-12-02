@@ -1,68 +1,84 @@
-    .container {
-        display: block;
-        background: url(../../../../images/falls1.jpg)#00000075;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-blend-mode: darken;
-        height: 110vh;
-        .content h1 {
-            width: unset;
-            margin: unset;
-            padding-top: 13px;
+@mixin mobile {
+    @media screen and (max-width: 426px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and(min-width: 427px) and(max-width: 769px) {
+        @content;
+    }
+}
+
+.container {
+    display: block;
+    background: url(../../../../images/falls1.jpg)#00000075;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 110vh;
+    .content h1 {
+        width: unset;
+        margin: unset;
+        padding-top: 13px;
+    }
+    .article {
+        width: 45%;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        top: 6rem;
+        left: 68%;
+        @include mobile {
+            width: 98%;
+            left: 1%;
         }
-        .article {
-            width: 45%;
-            background-color: white;
-            text-align: center;
-            position: relative;
-            top: 6rem;
-            left: 68%;
-            .js-form-item {
-                padding: 10px;
-                input#edit-title-0-value {
-                    width: 89%;
-                    padding: 3px 15px;
-                    outline: none;
-                }
-                input#edit-field-tags-target-id {
-                    width: 89%;
-                    outline: none;
-                    padding: 3px 15px;
-                }
-                .form-text.required {
-                    width: 89%;
-                    outline: none;
-                    padding: 3px 15px;
-                }
+        .js-form-item {
+            padding: 10px;
+            input#edit-title-0-value {
+                width: 89%;
+                padding: 3px 15px;
+                outline: none;
             }
-            #edit-actions {
-                padding: 10px;
+            input#edit-field-tags-target-id {
+                width: 89%;
+                outline: none;
+                padding: 3px 15px;
             }
-            .button {
-                padding: 7px 13px;
-                color: white;
-                background: black;
-                border: none;
+            .form-text.required {
+                width: 89%;
+                outline: none;
+                padding: 3px 15px;
             }
         }
-        #node-article-form {
-            label {
-                display: none;
-            }
-            #edit-body-0-format-help {
-                display: none;
-            }
-            .form-no-label {
-                display: none;
-            }
-            .form-no-label {
-                display: none;
-            }
-            .description {
-                display: none;
-            }
-            .js-form-item-field-author-0-target-id {
-                display: none;
-            }
+        #edit-actions {
+            padding: 10px;
+        }
+        .button {
+            padding: 7px 13px;
+            color: white;
+            background: black;
+            border: none;
         }
     }
+    #node-article-form {
+        label {
+            display: none;
+        }
+        #edit-body-0-format-help {
+            display: none;
+        }
+        .form-no-label {
+            display: none;
+        }
+        .form-no-label {
+            display: none;
+        }
+        .description {
+            display: none;
+        }
+        .js-form-item-field-author-0-target-id {
+            display: none;
+        }
+    }
+}

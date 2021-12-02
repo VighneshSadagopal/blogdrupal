@@ -1,0 +1,44 @@
+@mixin mobile {
+    @media screen and (max-width: 426px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and(min-width: 427px) and(max-width: 769px) {
+        @content;
+    }
+}
+
+form#views-exposed-form-category-page-1 {
+    position: absolute;
+    top: 56%;
+    font-size: 25px;
+    display: flex;
+    width: 100%;
+    left: 25%;
+    @include mobile {
+        top: 25%;
+        width: 75%;
+    }
+    @include tablet {
+        top: 47%;
+        width: 75%;
+    }
+    label {
+        display: none;
+    }
+    select#edit-tid {
+        width: 36rem;
+        padding: 9px 24px;
+        @include mobile {
+            width: unset;
+        }
+        @include tablet {
+            width: 20rem;
+        }
+    }
+    input#edit-submit-category {
+        height: 2.3rem;
+    }
+}

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - website_feedback
+id: website_feedback_delete_action
+label: 'Delete Website Feedback'
+type: website_feedback
+plugin: entity:delete_action:website_feedback
+configuration: {  }

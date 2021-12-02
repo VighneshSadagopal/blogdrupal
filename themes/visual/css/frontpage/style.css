@@ -4,6 +4,9 @@
     width: 100%;
     height: 650px;
     opacity: 58%; }
+    @media screen and (max-width: 426px) {
+      .banner p img {
+        height: 50vh; } }
 
 .banner h2 {
   width: 96%;
@@ -25,6 +28,14 @@
   text-transform: uppercase; }
   .banner .bannertext .banner-title:hover {
     transform: translateY(-8px); }
+  @media screen and (max-width: 426px) {
+    .banner .bannertext .banner-title {
+      font-size: 19px;
+      top: 25%; } }
+  @media screen and (min-width: 427px) and (max-width: 769px) {
+    .banner .bannertext .banner-title {
+      top: 29%;
+      font-size: 49px; } }
 
 .container {
   display: flex;
@@ -34,6 +45,10 @@
     width: 87%;
     margin-right: 20px;
     margin-bottom: 40px; }
+    @media screen and (max-width: 426px) {
+      .container .content {
+        width: 100%;
+        margin-right: unset; } }
     .container .content h1 {
       width: fit-content;
       margin-left: 11%; }
@@ -49,6 +64,9 @@
         display: inline-flex;
         list-style: none;
         right: 25rem; }
+        @media screen and (min-width: 427px) and (max-width: 769px) {
+          .container .content .blogs ul.js-pager__items {
+            right: 12rem; } }
         .container .content .blogs ul.js-pager__items li {
           padding: 7px 10px;
           background-color: black;
@@ -57,13 +75,34 @@
           .container .content .blogs ul.js-pager__items li a {
             color: white;
             text-decoration: none; }
+      .container .content .blogs header {
+        height: fit-content;
+        position: relative;
+        bottom: 2.5rem;
+        left: 76%; }
+        @media screen and (max-width: 426px) {
+          .container .content .blogs header {
+            bottom: 20rem;
+            left: 68%;
+            position: absolute; } }
+        .container .content .blogs header a {
+          padding: 7px;
+          background: black;
+          color: white;
+          text-decoration: none; }
     .container .content .views-row {
       position: relative;
       padding-inline-end: 10px;
       padding-block-end: 10px;
       overflow: hidden; }
+      @media screen and (max-width: 426px) {
+        .container .content .views-row {
+          margin: 0% 5%;
+          padding-inline-end: unset; } }
       .container .content .views-row:hover .hovercontent {
         display: block; }
+      .container .content .views-row:hover img {
+        opacity: 100%; }
       .container .content .views-row:hover .hovertag {
         display: block; }
       .container .content .views-row .hovercontent {
@@ -74,6 +113,11 @@
         width: 93.5%;
         animation: content 0.4s ease-in-out;
         display: none; }
+        @media screen and (max-width: 426px) {
+          .container .content .views-row .hovercontent {
+            display: block;
+            width: 94%;
+            padding: 3px 12px; } }
         .container .content .views-row .hovercontent .title {
           font-size: 20px;
           font-weight: 600;
@@ -110,6 +154,9 @@
         .container .content .views-row .views-field-field-image .field-content img {
           opacity: 60%;
           border-radius: 15px; }
+          @media screen and (max-width: 426px) {
+            .container .content .views-row .views-field-field-image .field-content img {
+              width: 100%; } }
 
 @keyframes content {
   0% {
@@ -119,8 +166,27 @@
   0% {
     top: -10%; } }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  color: #bbbbbb;
+  background: #24262b;
+  padding: 70px 0px;
+  margin-top: 10px; }
+  @media screen and (max-width: 426px) {
+    .footer {
+      flex-direction: column;
+      padding: 15px; } }
+  .footer h2 {
+    color: white;
+    font-size: 15px; }
+  .footer li {
+    padding-bottom: 9px; }
+    .footer li a {
+      color: #bbbbbb;
+      text-decoration: none; }
+
 .main_navigation {
-  background-color: black;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -128,29 +194,163 @@
   z-index: 10; }
   .main_navigation nav#block-visual-main-menu {
     margin: 0px 249px; }
+    @media screen and (max-width: 426px) {
+      .main_navigation nav#block-visual-main-menu {
+        margin: unset; } }
   .main_navigation nav#block-usernamemenu {
     position: absolute;
     top: 52%;
     right: 7%;
     display: none; }
+    @media screen and (max-width: 426px) {
+      .main_navigation nav#block-usernamemenu {
+        top: 43%;
+        right: 5%; } }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      .main_navigation nav#block-usernamemenu {
+        top: 61%;
+        right: -16%; } }
     .main_navigation nav#block-usernamemenu ul {
       display: flex;
       flex-direction: column; }
       .main_navigation nav#block-usernamemenu ul li {
         background-color: black; }
+        @media screen and (max-width: 426px) {
+          .main_navigation nav#block-usernamemenu ul li {
+            font-size: 25px; } }
+        @media screen and (min-width: 427px) and (max-width: 769px) {
+          .main_navigation nav#block-usernamemenu ul li {
+            font-size: 25px; } }
   .main_navigation div {
     display: flex;
     justify-content: space-around; }
     .main_navigation div #block-visual-branding {
       margin: 7px; }
-    .main_navigation div ul {
+    @media screen and (max-width: 426px) {
+      .main_navigation div {
+        margin-right: 54%; } }
+    .main_navigation div #block-visual-main-menu ul {
       display: flex;
       width: fit-content; }
-      .main_navigation div ul li {
+      @media screen and (max-width: 426px) {
+        .main_navigation div #block-visual-main-menu ul {
+          display: none; }
+          .main_navigation div #block-visual-main-menu ul.show {
+            position: fixed;
+            background: black;
+            width: 100%;
+            left: 0%;
+            top: -2%;
+            height: 100%;
+            display: block; } }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .main_navigation div #block-visual-main-menu ul {
+          display: none; }
+          .main_navigation div #block-visual-main-menu ul.show {
+            position: fixed;
+            background: black;
+            width: 100%;
+            left: 0%;
+            top: -2%;
+            height: 100%;
+            display: block; } }
+      .main_navigation div #block-visual-main-menu ul li {
         color: white;
         list-style: none;
         padding: 9px; }
-        .main_navigation div ul li a {
+        @media screen and (max-width: 426px) {
+          .main_navigation div #block-visual-main-menu ul li {
+            width: fit-content;
+            font-size: xx-large;
+            position: relative;
+            top: 27%; } }
+        @media screen and (min-width: 427px) and (max-width: 769px) {
+          .main_navigation div #block-visual-main-menu ul li {
+            width: fit-content;
+            font-size: xx-large;
+            position: relative;
+            top: 27%; } }
+        .main_navigation div #block-visual-main-menu ul li a {
+          color: white;
+          list-style: none;
+          text-decoration: none; }
+    .main_navigation div div ul {
+      display: flex;
+      width: fit-content; }
+      @media screen and (max-width: 426px) {
+        .main_navigation div div ul {
+          display: none; }
+          .main_navigation div div ul.show {
+            position: fixed;
+            background: black;
+            width: 100%;
+            left: 0%;
+            top: -2%;
+            height: 100%;
+            display: block; } }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .main_navigation div div ul {
+          display: none; }
+          .main_navigation div div ul.show {
+            position: fixed;
+            background: black;
+            width: 100%;
+            left: 0%;
+            top: -2%;
+            height: 100%;
+            display: block; } }
+      .main_navigation div div ul li {
+        color: white;
+        list-style: none;
+        padding: 9px; }
+        @media screen and (max-width: 426px) {
+          .main_navigation div div ul li {
+            width: fit-content;
+            font-size: xx-large;
+            position: relative;
+            top: 27%; } }
+        @media screen and (min-width: 427px) and (max-width: 769px) {
+          .main_navigation div div ul li {
+            width: fit-content;
+            font-size: xx-large;
+            position: relative;
+            top: 27%; } }
+        .main_navigation div div ul li a {
+          color: white;
+          list-style: none;
+          text-decoration: none; }
+    .main_navigation div nav#block-visual-account-menu ul {
+      display: flex;
+      width: fit-content; }
+      @media screen and (max-width: 426px) {
+        .main_navigation div nav#block-visual-account-menu ul {
+          display: none; }
+          .main_navigation div nav#block-visual-account-menu ul.show {
+            display: block;
+            position: absolute;
+            left: 6%; } }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .main_navigation div nav#block-visual-account-menu ul {
+          display: none; }
+          .main_navigation div nav#block-visual-account-menu ul.show {
+            display: block; } }
+      .main_navigation div nav#block-visual-account-menu ul li {
+        color: white;
+        list-style: none;
+        padding: 9px; }
+        @media screen and (max-width: 426px) {
+          .main_navigation div nav#block-visual-account-menu ul li {
+            width: fit-content;
+            font-size: xx-large;
+            position: relative;
+            right: 20%; } }
+        @media screen and (min-width: 427px) and (max-width: 769px) {
+          .main_navigation div nav#block-visual-account-menu ul li {
+            width: fit-content;
+            font-size: xx-large;
+            position: relative;
+            top: 27%; } }
+        .main_navigation div nav#block-visual-account-menu ul li a {
           color: white;
           list-style: none;
           text-decoration: none; }
@@ -158,19 +358,61 @@
     padding: 7px 0px; }
     .main_navigation .userside:hover #block-usernamemenu {
       display: block; }
+    @media screen and (max-width: 426px) {
+      .main_navigation .userside {
+        display: none; }
+        .main_navigation .userside.show {
+          position: absolute;
+          left: 27%;
+          z-index: 10;
+          display: block; } }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      .main_navigation .userside {
+        display: none; }
+        .main_navigation .userside.show {
+          position: absolute;
+          left: 6%;
+          z-index: 10;
+          display: block; } }
     .main_navigation .userside .user-name {
       color: white;
       margin-top: 15px; }
+      @media screen and (max-width: 426px) {
+        .main_navigation .userside .user-name {
+          font-size: 25px; } }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .main_navigation .userside .user-name {
+          font-size: 25px; } }
     .main_navigation .userside .smallimg {
       margin-inline-end: 20px; }
       .main_navigation .userside .smallimg img {
         border-radius: 50%;
         margin-left: 5%; }
 
+button#hamburger {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+  display: none;
+  z-index: 10; }
+  @media screen and (max-width: 426px) {
+    button#hamburger {
+      display: block; } }
+  @media screen and (min-width: 427px) and (max-width: 769px) {
+    button#hamburger {
+      display: block; } }
+
 .sidebar {
   position: relative;
-  right: 7%;
+  right: 4%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 426px) {
+    .sidebar {
+      display: none; } }
+  @media screen and (min-width: 427px) and (max-width: 769px) {
+    .sidebar {
+      right: 2%; } }
   .sidebar .sidecontent {
     padding: 4px 20px;
     text-align: center;
@@ -212,3 +454,9 @@ html body {
   margin-top: 2px;
   text-align: center;
   width: 98%; }
+  @media screen and (max-width: 426px) {
+    .copyright {
+      width: 92%; } }
+  @media screen and (min-width: 427px) and (max-width: 769px) {
+    .copyright {
+      width: 96.5%; } }

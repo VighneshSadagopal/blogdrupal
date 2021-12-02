@@ -1,0 +1,13 @@
+.website-feedback-toggle-wrapper {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+.button.button-website-feedback {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+.website-feedback-success-message {
+  margin: 1em 0;
+}

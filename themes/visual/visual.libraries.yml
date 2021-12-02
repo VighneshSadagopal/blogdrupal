@@ -29,3 +29,14 @@ loginpage:
   css:
     theme:
       css/loginpage/style.css: {}
+  js:
+    js/login.js: {}
+  dependencies:
+    - core/jquery
+
+
+categorypage:
+  version: VERSION
+  css:
+    theme:
+      css/category/style.css: {}

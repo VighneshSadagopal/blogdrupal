@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Installation actions for Website Feedback.
+ */
+
+use Drupal\Core\Link;
+
+/**
+ * Implements hook_requirements().
+ */
+function website_feedback_requirements($phase) {
+  if ($phase != 'runtime') {
+    return [];
+  }
+  $config = \Drupal::config('website_feedback.settings');
+  $path = '/libraries/html2canvas/html2canvas.min.js';
+  $name = 'Html2canvas';
+  $module = 'Website Feedback';
+  $url = 'https://github.com/niklasvh/html2canvas';
+  $requirements = [];
+  $requirements['title'] = t('Html2canvas library');
+  if ($config->get('html2canvas_cdn')) {
+    $requirements['severity'] = REQUIREMENT_INFO;
+    $requirements['value'] = t('@name library loads from CDN', [
+      '@name' => $name,
+    ]);
+    $requirements['description'] = t('Module @module is configured to use CDN for @name library. This could be changed to use local library at the @adminPage.', [
+      '@adminPage' => Link::createFromRoute(t('admin page'), 'website_feedback.settings')->toString(),
+      '@module' => $module,
+      '@name' => $name,
+    ]);
+  }
+  elseif (is_file(\Drupal::root() . $path)) {
+    $requirements['severity'] = REQUIREMENT_OK;
+    $requirements['value'] = t('@name library installed at @path', [
+      '@name' => $name,
+      '@path' => $path,
+    ]);
+  }
+  else {
+    $requirements['severity'] = REQUIREMENT_ERROR;
+    $requirements['value'] = t('@name library is not installed and not configured to use CDN', ['@name' => $name]);
+    $requirements['description'] = t('The <a href=":url">@name library</a> should be installed at @path or the module @module should be configured to use CDN at the @adminPage.', [
+      ':url' => $url,
+      '@name' => $name,
+      '@path' => $path,
+      '@module' => $module,
+      '@adminPage' => Link::createFromRoute(t('admin page'), 'website_feedback.settings')->toString(),
+    ]);
+  }
+  return ['html2canvas_library' => $requirements];
+}

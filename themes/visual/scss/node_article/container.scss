@@ -8,6 +8,10 @@
         width: 75%;
         margin-left: 14%;
         position: unset;
+        @include mobile {
+            width: 88%;
+            margin-left: 7%;
+        }
         #block-visual-page-title {
             position: absolute;
             top: 16%;
@@ -17,6 +21,10 @@
             font-size: xx-large;
             width: 100%;
             text-align: center;
+            @include mobile {
+                top: 9%;
+                font-size: 17px;
+            }
             h1 {
                 width: unset;
                 margin: unset;
@@ -27,6 +35,9 @@
             padding: 30px;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            @include mobile {
+                margin-top: 100%;
+            }
             div {
                 margin: 10px 0px;
             }
@@ -36,6 +47,15 @@
                 width: 100%;
                 left: 0%;
                 height: 45%;
+                @include mobile {
+                    height: unset;
+                }
+            }
+            .js-form-item-subject-0-value {
+                display: none;
+            }
+            .js-form-item-comment-body-0-value label {
+                display: none;
             }
         }
         #block-visual-local-tasks {

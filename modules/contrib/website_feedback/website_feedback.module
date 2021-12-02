@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Provides a website feedback entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function website_feedback_theme() {
+  return [
+    'website_feedback' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for website feedback templates.
+ *
+ * Default template: website-feedback.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the website feedback
+ *     information and any fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_website_feedback(array &$variables) {
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * Add main library to the entire website.
+ */
+function website_feedback_page_attachments(array &$attachments) {
+  $attachments['#cache']['contexts'][] = 'user.permissions';
+  $user = \Drupal::currentUser();
+  if ($user->hasPermission('create website feedback')) {
+    $attachments['#attached']['library'][] = 'website_feedback/website_feedback';
+    $config = \Drupal::config('website_feedback.settings');
+    $attachments['#attached']['drupalSettings']['websiteFeedback'] = [
+      'buttonText' => $config->get('button_text'),
+      'buttonTitle' => $config->get('button_title'),
+    ];
+  }
+}

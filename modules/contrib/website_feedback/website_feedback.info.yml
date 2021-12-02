@@ -1,0 +1,14 @@
+name: Website Feedback
+type: module
+description: 'Collects a customers'' website feedback.'
+package: Administration
+configure: website_feedback.settings
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:text
+
+# Information added by Drupal.org packaging script on 2021-09-16
+version: '1.0.0'
+project: 'website_feedback'
+datestamp: 1631766653

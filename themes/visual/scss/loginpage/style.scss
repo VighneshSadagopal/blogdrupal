@@ -1,3 +1,15 @@
+@mixin mobile {
+    @media screen and (max-width: 426px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and(min-width: 427px) and(max-width: 769px) {
+        @content;
+    }
+}
+
 .container {
     .article {
         height: 75vh;
@@ -13,11 +25,6 @@
         .button {
             width: 64%;
         }
-        .form-text {
-            width: 60%;
-            padding: 2px 7px;
-            outline: none;
-        }
     }
     #user-login-form {
         padding-top: 30px;
@@ -26,6 +33,11 @@
         }
         .description {
             display: none;
+        }
+        .form-text {
+            width: 60%;
+            padding: 2px 7px;
+            outline: none;
         }
     }
     #user-register-form {
@@ -40,6 +52,17 @@
             width: 60%;
             padding: 2px 7px;
             outline: none;
+            @include mobile {
+                width: 93%;
+            }
+        }
+        #edit-name {
+            width: 60%;
+            padding: 2px 7px;
+            outline: none;
+            @include mobile {
+                width: 93%;
+            }
         }
         summary {
             display: none;
@@ -47,5 +70,14 @@
         .js-form-item-contact {
             display: none;
         }
+        input#edit-display-name {
+            width: 62%;
+            @include mobile {
+                width: 97%;
+            }
+        }
+    }
+    .form-text.required {
+        width: 56%;
     }
 }

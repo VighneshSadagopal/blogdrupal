@@ -1,0 +1,5 @@
+website_feedback.add_form:
+  route_name: entity.website_feedback.add_form
+  title: 'Add website feedback'
+  appears_on:
+    - entity.website_feedback.collection

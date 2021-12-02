@@ -1,0 +1,29 @@
+field.widget.settings.website_feedback_screenshot:
+  type: mapping
+  label: Screenshot image widget settings
+  mapping:
+    technology:
+      type: string
+      label: Screenshot technology
+website_feedback.settings:
+  type: config_object
+  label: 'Website Feedback configuration'
+  mapping:
+    type_enabled:
+      type: boolean
+      label: 'Enable feedback type selector'
+    screenshot_technology:
+      type: string
+      label: 'Screenshot technology'
+    button_text:
+      type: string
+      label: 'Feedback button text'
+    button_title:
+      type: string
+      label: 'Feedback button title attribute'
+    success_message:
+      type: string
+      label: 'Success message'
+    html2canvas_cdn:
+      type: boolean
+      label: 'Load Html2canvas library from CDN'

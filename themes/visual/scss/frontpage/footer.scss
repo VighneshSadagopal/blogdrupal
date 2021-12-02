@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    color: #bbbbbb;
+    background: #24262b;
+    padding: 70px 0px;
+    margin-top: 10px;
+    @include mobile {
+        flex-direction: column;
+        padding: 15px;
+    }
+    h2 {
+        color: white;
+        font-size: 15px;
+    }
+    li {
+        padding-bottom: 9px;
+        a {
+            color: #bbbbbb;
+            text-decoration: none;
+        }
+    }
+}

@@ -30,7 +30,9 @@
         "drupal/token": "^1.9",
         "drupal/user_display_name": "^1.0",
         "drupal/views_add_button": "^1.8",
-        "drupal/votingapi": "^3.0@beta"
+        "drupal/votingapi": "^3.0@beta",
+        "drupal/webform": "^6.1",
+        "drupal/website_feedback": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"

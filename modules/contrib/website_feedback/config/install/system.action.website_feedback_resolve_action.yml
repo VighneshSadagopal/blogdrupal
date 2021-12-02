@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - website_feedback
+id: website_feedback_resolve_action
+label: 'Mark Website Feedback as resolved'
+type: website_feedback
+plugin: website_feedback_resolve_action
+configuration: {  }

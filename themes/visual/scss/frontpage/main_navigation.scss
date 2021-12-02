@@ -1,6 +1,5 @@
 // Main Navigation : 
 .main_navigation {
-    background-color: black;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -8,17 +7,34 @@
     z-index: 10;
     nav#block-visual-main-menu {
         margin: 0px 249px;
+        @include mobile {
+            margin: unset;
+        }
     }
     nav#block-usernamemenu {
         position: absolute;
         top: 52%;
         right: 7%;
         display: none;
+        @include mobile {
+            top: 43%;
+            right: 5%;
+        }
+        @include tablet {
+            top: 61%;
+            right: -16%;
+        }
         ul {
             display: flex;
             flex-direction: column;
             li {
                 background-color: black;
+                @include mobile {
+                    font-size: 25px;
+                }
+                @include tablet {
+                    font-size: 25px;
+                }
             }
         }
     }
@@ -28,17 +44,152 @@
         #block-visual-branding {
             margin: 7px;
         }
-        ul {
-            display: flex;
-            width: fit-content;
-            li {
-                color: white;
-                list-style: none;
-                padding: 9px;
-                a {
+        @include mobile {
+            margin-right: 54%;
+        }
+        #block-visual-main-menu {
+            ul {
+                display: flex;
+                width: fit-content;
+                @include mobile {
+                    display: none;
+                    &.show {
+                        position: fixed;
+                        background: black;
+                        width: 100%;
+                        left: 0%;
+                        top: -2%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+                @include tablet {
+                    display: none;
+                    &.show {
+                        position: fixed;
+                        background: black;
+                        width: 100%;
+                        left: 0%;
+                        top: -2%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+                li {
                     color: white;
                     list-style: none;
-                    text-decoration: none;
+                    padding: 9px;
+                    @include mobile {
+                        width: fit-content;
+                        font-size: xx-large;
+                        position: relative;
+                        top: 27%;
+                    }
+                    @include tablet {
+                        width: fit-content;
+                        font-size: xx-large;
+                        position: relative;
+                        top: 27%;
+                    }
+                    a {
+                        color: white;
+                        list-style: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        div {
+            ul {
+                display: flex;
+                width: fit-content;
+                @include mobile {
+                    display: none;
+                    &.show {
+                        position: fixed;
+                        background: black;
+                        width: 100%;
+                        left: 0%;
+                        top: -2%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+                @include tablet {
+                    display: none;
+                    &.show {
+                        position: fixed;
+                        background: black;
+                        width: 100%;
+                        left: 0%;
+                        top: -2%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+                li {
+                    color: white;
+                    list-style: none;
+                    padding: 9px;
+                    @include mobile {
+                        width: fit-content;
+                        font-size: xx-large;
+                        position: relative;
+                        top: 27%;
+                    }
+                    @include tablet {
+                        width: fit-content;
+                        font-size: xx-large;
+                        position: relative;
+                        top: 27%;
+                    }
+                    a {
+                        color: white;
+                        list-style: none;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        nav#block-visual-account-menu {
+            ul {
+                display: flex;
+                width: fit-content;
+                @include mobile {
+                    display: none;
+                    &.show {
+                        display: block;
+                        position: absolute;
+                        left: 6%;
+                    }
+                }
+                @include tablet {
+                    display: none;
+                    &.show {
+                        display: block;
+                    }
+                }
+                li {
+                    color: white;
+                    list-style: none;
+                    padding: 9px;
+                    @include mobile {
+                        width: fit-content;
+                        font-size: xx-large;
+                        position: relative;
+                        right: 20%;
+                    }
+                    @include tablet {
+                        width: fit-content;
+                        font-size: xx-large;
+                        position: relative;
+                        top: 27%;
+                    }
+                    a {
+                        color: white;
+                        list-style: none;
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -48,9 +199,33 @@
         &:hover #block-usernamemenu {
             display: block;
         }
+        @include mobile {
+            display: none;
+            &.show {
+                position: absolute;
+                left: 27%;
+                z-index: 10;
+                display: block;
+            }
+        }
+        @include tablet {
+            display: none;
+            &.show {
+                position: absolute;
+                left: 6%;
+                z-index: 10;
+                display: block;
+            }
+        }
         .user-name {
             color: white;
             margin-top: 15px;
+            @include mobile {
+                font-size: 25px;
+            }
+            @include tablet {
+                font-size: 25px;
+            }
         }
         .smallimg {
             margin-inline-end: 20px;
@@ -59,5 +234,20 @@
                 margin-left: 5%;
             }
         }
+    }
+}
+
+button#hamburger {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    display: none;
+    z-index: 10;
+    @include mobile {
+        display: block;
+    }
+    @include tablet {
+        display: block;
     }
 }

@@ -1,0 +1,25 @@
+website_feedback.settings:
+  path: '/admin/config/system/settings'
+  defaults:
+    _title: 'Website Feedback settings'
+    _form: 'Drupal\website_feedback\Form\SettingsForm'
+  requirements:
+    _permission: 'administer website feedback'
+
+website_feedback.multiple_delete_confirm:
+  path: '/admin/content/website-feedback/delete'
+  defaults:
+    _title: 'Delete'
+    _form: '\Drupal\website_feedback\Form\ConfirmDeleteMultiple'
+    entity_type_id: 'website_feedback'
+  requirements:
+    _permission: 'delete website feedback'
+
+entity.website_feedback.delete_multiple_form:
+  path: '/admin/content/website-feedback/delete'
+  defaults:
+    _title: 'Delete'
+    _form: '\Drupal\website_feedback\Form\ConfirmDeleteMultiple'
+    entity_type_id: 'website_feedback'
+  requirements:
+    _permission: 'delete website feedback'

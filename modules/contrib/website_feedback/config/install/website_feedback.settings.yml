@@ -1,0 +1,6 @@
+type_enabled: 1
+screenshot_technology: html2canvas
+button_text: Feedback
+button_title: Open pop-up to leave a feedback, ask a question or report an issue
+success_message: Thank you! We received your feedback.
+html2canvas_cdn: 1

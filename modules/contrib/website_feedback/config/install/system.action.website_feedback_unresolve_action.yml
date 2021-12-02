@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - website_feedback
+id: website_feedback_unresolve_action
+label: 'Remove Resolved mark from Website Feedback'
+type: website_feedback
+plugin: website_feedback_unresolve_action
+configuration: {  }

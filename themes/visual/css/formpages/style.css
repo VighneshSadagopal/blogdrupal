@@ -16,6 +16,10 @@
     position: relative;
     top: 6rem;
     left: 68%; }
+    @media screen and (max-width: 426px) {
+      .container .article {
+        width: 98%;
+        left: 1%; } }
     .container .article .js-form-item {
       padding: 10px; }
       .container .article .js-form-item input#edit-title-0-value {

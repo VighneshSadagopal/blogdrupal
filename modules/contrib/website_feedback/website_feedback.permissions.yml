@@ -1,0 +1,11 @@
+administer website feedback:
+  title: 'Administer website feedback settings'
+  restrict access: true
+delete website feedback:
+  title: Delete website feedback
+create website feedback:
+  title: Create website feedback
+view website feedback:
+  title: View website feedback
+edit website feedback:
+  title: Edit website feedback

@@ -9,7 +9,9 @@ function visual_preprocess_region(&$variables) {
     $variables['attributes']['class'][] = 'article';
   }
 
-  
+
+
+
 }
 
 function visual_preprocess_node(&$variables) {
@@ -17,6 +19,28 @@ function visual_preprocess_node(&$variables) {
   if (isset($variables['node']) && $variables['node'] == 'field--node') {
     $variables['attributes']['class'][] = 'node';
   }
+}
+
+function visual_preprocess_html__user__login(&$variables) {
+  
+    $variables['#attached']['library'][] = 'visual/form-pages';
+  
+}
+function visual_preprocess_html__user__register(&$variables) {
+  
+    $variables['#attached']['library'][] = 'visual/form-pages';
+  
+}
+
+function visual_preprocess_html__node__add__article(&$variables) {
+  
+    $variables['#attached']['library'][] = 'visual/form-pages';
+  
+}
+function visual_preprocess_html__node__edit(&$variables) {
+  
+    $variables['#attached']['library'][] = 'visual/form-pages';
+  
 }
 function visual_preprocess_page(&$variables) {
  
@@ -41,19 +65,31 @@ function visual_form_alter(&$form, &$form_state, $form_id) {
     $form['name']['#attributes']['placeholder'] = t('Username');
     $form['pass']['#attributes']['placeholder'] = t('Password');
   }
+
+   if ($form_id == 'user_register_form') {
+    $form['display_name']['#attributes']['placeholder'] = t('Display Name');
+    $form['mail']['#attributes']['placeholder'] = t('Email');
+    $form['name']['#attributes']['placeholder'] = t('Username');
+  }
   
 }
 
-function visual_preprocess_html__user__login(&$variables) {
+function visual_preprocess_field__node__article(&$variables) {
+
   
-    $variables['#attached']['library'][] = 'visual/form-pages';
+    $variables['attributes']['class'][] = 'node-image';
   
 }
 
-function visual_preprocess_html__node__add__article(&$variables) {
+function visual_preprocess_page__category(&$variables) {
+
   
-    $variables['#attached']['library'][] = 'visual/form-pages';
+ $variables['#attached']['library'][] = 'visual/categorypage';
   
 }
+function visual_preprocess_menu__account(&$variables) {
 
-
+  
+    $variables['attributes']['class'][] = 'login';
+  
+}

@@ -9,10 +9,6 @@
     outline: none; }
   .container .article .button {
     width: 64%; }
-  .container .article .form-text {
-    width: 60%;
-    padding: 2px 7px;
-    outline: none; }
 
 .container #user-login-form {
   padding-top: 30px; }
@@ -20,6 +16,10 @@
     display: none; }
   .container #user-login-form .description {
     display: none; }
+  .container #user-login-form .form-text {
+    width: 60%;
+    padding: 2px 7px;
+    outline: none; }
 
 .container #user-register-form {
   padding-top: 30px; }
@@ -31,7 +31,25 @@
     width: 60%;
     padding: 2px 7px;
     outline: none; }
+    @media screen and (max-width: 426px) {
+      .container #user-register-form #edit-mail {
+        width: 93%; } }
+  .container #user-register-form #edit-name {
+    width: 60%;
+    padding: 2px 7px;
+    outline: none; }
+    @media screen and (max-width: 426px) {
+      .container #user-register-form #edit-name {
+        width: 93%; } }
   .container #user-register-form summary {
     display: none; }
   .container #user-register-form .js-form-item-contact {
     display: none; }
+  .container #user-register-form input#edit-display-name {
+    width: 62%; }
+    @media screen and (max-width: 426px) {
+      .container #user-register-form input#edit-display-name {
+        width: 97%; } }
+
+.container .form-text.required {
+  width: 56%; }

@@ -13,3 +13,14 @@ window.onscroll = function() {
         nav.style.borderBottom = "none";
     }
 }
+
+
+
+document.getElementById('hamburger').addEventListener('click', () => {
+    document.querySelector(".main_navigation ul").classList.toggle('show');
+    document.querySelector("button svg").classList.toggle('fa-bars');
+    document.querySelector("button svg").classList.toggle('fa-times');
+    document.querySelector(".userside").classList.toggle('show');
+
+
+});

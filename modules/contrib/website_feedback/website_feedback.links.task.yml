@@ -1,0 +1,18 @@
+entity.website_feedback.view:
+  title: View
+  route_name: entity.website_feedback.canonical
+  base_route: entity.website_feedback.canonical
+entity.website_feedback.edit_form:
+  title: Edit
+  route_name: entity.website_feedback.edit_form
+  base_route: entity.website_feedback.canonical
+entity.website_feedback.delete_form:
+  title: Delete
+  route_name: entity.website_feedback.delete_form
+  base_route: entity.website_feedback.canonical
+  weight: 10
+entity.website_feedback.collection:
+  title: Website Feedback
+  route_name: entity.website_feedback.collection
+  base_route: system.admin_content
+  weight: 10

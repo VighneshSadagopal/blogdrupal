@@ -1,8 +1,14 @@
 // Sidebar
 .sidebar {
     position: relative;
-    right: 7%;
+    right: 4%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    @include mobile {
+        display: none;
+    }
+    @include tablet {
+        right: 2%;
+    }
     .sidecontent {
         padding: 4px 20px;
         text-align: center;
