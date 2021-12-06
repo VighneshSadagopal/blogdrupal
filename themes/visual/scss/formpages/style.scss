@@ -21,6 +21,10 @@
         width: unset;
         margin: unset;
         padding-top: 13px;
+        @include tablet {
+            padding-top: 22%;
+            font-size: 50px;
+        }
     }
     .article {
         width: 45%;
@@ -32,6 +36,11 @@
         @include mobile {
             width: 98%;
             left: 1%;
+        }
+        @include tablet {
+            width: 98%;
+            left: 9%;
+            top: 10rem;
         }
         .js-form-item {
             padding: 10px;
@@ -81,4 +90,48 @@
             display: none;
         }
     }
+    #node-article-edit-form {
+        label {
+            display: none;
+        }
+        #edit-body-0-format-help {
+            display: none;
+        }
+        .form-no-label {
+            display: none;
+        }
+        .form-no-label {
+            display: none;
+        }
+        .description {
+            display: none;
+        }
+        .js-form-item-field-author-0-target-id {
+            display: none;
+        }
+    }
 }
+
+// .container .content .article {
+//     width: 45%;
+//     background-color: white;
+//     text-align: center;
+//     position: relative;
+//     top: 4rem;
+//     left: 39%;
+//     @include mobile {
+//         width: 88%;
+//         left: unset;
+//     }
+//     #block-visual-page-title {
+//         position: unset;
+//         color: black;
+//         h1 {
+//             width: unset;
+//             margin: unset;
+//             position: unset;
+//             padding: unset;
+//             font-size: x-large;
+//         }
+//     }
+// }

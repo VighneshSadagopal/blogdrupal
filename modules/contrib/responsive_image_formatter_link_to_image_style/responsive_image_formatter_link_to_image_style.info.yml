@@ -1,0 +1,13 @@
+name: Responsive Image formatter link to image style
+type: module
+description: 'Provides an additional formatter for responsive image core field, to link to an image style.'
+package: Field
+core_version_requirement: ^8 || ^9
+dependencies:
+  - image
+  - responsive_image
+
+# Information added by Drupal.org packaging script on 2021-05-13
+version: '2.0.0'
+project: 'responsive_image_formatter_link_to_image_style'
+datestamp: 1620936406

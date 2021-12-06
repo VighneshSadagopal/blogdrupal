@@ -1,5 +1,15 @@
 .container .article {
+  width: 29% !important;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  top: 6 rem;
+  left: 80% !important;
   height: 75vh; }
+  @media screen and (max-width: 426px) {
+    .container .article {
+      width: 98% !important;
+      left: 1% !important; } }
   .container .article ul {
     list-style: none;
     padding: unset; }
@@ -9,17 +19,33 @@
     outline: none; }
   .container .article .button {
     width: 64%; }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      .container .article .button {
+        font-size: 25px; } }
 
 .container #user-login-form {
   padding-top: 30px; }
   .container #user-login-form label {
     display: none; }
+  .container #user-login-form label.option {
+    display: block; }
   .container #user-login-form .description {
     display: none; }
   .container #user-login-form .form-text {
     width: 60%;
     padding: 2px 7px;
     outline: none; }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      .container #user-login-form .form-text {
+        font-size: 25px; } }
+  .container #user-login-form .js-form-item-persistent-login {
+    display: flex;
+    width: fit-content;
+    margin-left: 17%; }
+
+@media screen and (min-width: 427px) and (max-width: 769px) {
+  .container #block-visual-local-tasks {
+    font-size: 25px; } }
 
 .container #user-register-form {
   padding-top: 30px; }

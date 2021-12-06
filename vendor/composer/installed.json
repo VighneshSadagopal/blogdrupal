@@ -2666,6 +2666,57 @@
             "install-path": "../../modules/contrib/like_and_dislike"
         },
         {
+            "name": "drupal/persistent_login",
+            "version": "1.3.0",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/persistent_login.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/persistent_login-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "dfff4cb76d6b3888073dd992bcf4d51b1bb47696"
+            },
+            "require": {
+                "drupal/core": "^8.3 || ^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1591597823",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gapple",
+                    "homepage": "https://www.drupal.org/user/490940"
+                }
+            ],
+            "description": "Provides a \"Remember Me\" feature on the login form.",
+            "homepage": "https://www.drupal.org/project/persistent_login",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/persistent_login",
+                "issues": "https://www.drupal.org/project/issues/persistent_login"
+            },
+            "install-path": "../../modules/contrib/persistent_login"
+        },
+        {
             "name": "drupal/phpmailer_smtp",
             "version": "2.0.2",
             "version_normalized": "2.0.2.0",
@@ -2722,6 +2773,62 @@
                 "issues": "https://www.drupal.org/project/issues/phpmailer_smtp"
             },
             "install-path": "../../modules/contrib/phpmailer_smtp"
+        },
+        {
+            "name": "drupal/responsive_image_formatter_link_to_image_style",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/responsive_image_formatter_link_to_image_style.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/responsive_image_formatter_link_to_image_style-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "fdc20ae91df3b751a63315fe38a42f835765c402"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "php": ">=5.5.9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1620936404",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Eli.Stone",
+                    "homepage": "https://www.drupal.org/user/3537348"
+                },
+                {
+                    "name": "dan2k3k4",
+                    "homepage": "https://www.drupal.org/user/2437398"
+                }
+            ],
+            "description": "Provides an additional formatter for responsive image core field, to link to an image style.",
+            "homepage": "https://www.drupal.org/project/responsive_image_formatter_link_to_image_style",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/responsive_image_formatter_link_to_image_style",
+                "issues": "https://www.drupal.org/project/issues/responsive_image_formatter_link_to_image_style"
+            },
+            "install-path": "../../modules/contrib/responsive_image_formatter_link_to_image_style"
         },
         {
             "name": "drupal/slick",
@@ -2864,6 +2971,58 @@
                 "issues": "https://www.drupal.org/project/issues/smtp"
             },
             "install-path": "../../modules/contrib/smtp"
+        },
+        {
+            "name": "drupal/svg_icon_field",
+            "version": "1.0.0-alpha8",
+            "version_normalized": "1.0.0.0-alpha8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_icon_field.git",
+                "reference": "8.x-1.0-alpha8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_icon_field-8.x-1.0-alpha8.zip",
+                "reference": "8.x-1.0-alpha8",
+                "shasum": "b97b1bda6f74bb578aaf0aecf92f0382770625a3"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha8",
+                    "datestamp": "1632131168",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dawid Nawrot (dawid_nawrot)",
+                    "homepage": "https://www.drupal.org/u/dawid_nawrot",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "This module provides a new SVG icon field.",
+            "homepage": "https://www.drupal.org/project/svg_icon_field",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_icon_field",
+                "issues": "https://www.drupal.org/project/issues/svg_icon_field"
+            },
+            "install-path": "../../modules/contrib/svg_icon_field"
         },
         {
             "name": "drupal/token",
@@ -3037,6 +3196,128 @@
                 "issues": "https://www.drupal.org/project/issues/search/views_add_button"
             },
             "install-path": "../../modules/contrib/views_add_button"
+        },
+        {
+            "name": "drupal/views_infinite_scroll",
+            "version": "1.9.0",
+            "version_normalized": "1.9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_infinite_scroll.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_infinite_scroll-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "875d58d317d48036ed1d9ef538bc8a76bc3dcb5b"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1632421809",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Bobík",
+                    "homepage": "https://www.drupal.org/user/123612"
+                },
+                {
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/user/3580850"
+                },
+                {
+                    "name": "Remon",
+                    "homepage": "https://www.drupal.org/user/143827"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                }
+            ],
+            "description": "A pager which allows an infinite scroll effect for views.",
+            "homepage": "https://www.drupal.org/project/views_infinite_scroll",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_infinite_scroll"
+            },
+            "install-path": "../../modules/contrib/views_infinite_scroll"
+        },
+        {
+            "name": "drupal/views_load_more",
+            "version": "2.0.0-alpha1",
+            "version_normalized": "2.0.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_load_more.git",
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_load_more-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "badedb1750c0db3a168e3253ebedaf6eab44f0a3"
+            },
+            "require": {
+                "drupal/core": "^8.8.3 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1625153330",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "attila.fekete",
+                    "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "baikho",
+                    "homepage": "https://www.drupal.org/user/2727459"
+                },
+                {
+                    "name": "ericduran",
+                    "homepage": "https://www.drupal.org/user/244460"
+                },
+                {
+                    "name": "m4olivei",
+                    "homepage": "https://www.drupal.org/user/410384"
+                },
+                {
+                    "name": "wjaspers",
+                    "homepage": "https://www.drupal.org/user/813890"
+                }
+            ],
+            "description": "A pager plugin for views. Gives users the option to add a \"more\" button to a view and have the results appended to existing results being displayed.",
+            "homepage": "https://www.drupal.org/project/views_load_more",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_load_more"
+            },
+            "install-path": "../../modules/contrib/views_load_more"
         },
         {
             "name": "drupal/votingapi",

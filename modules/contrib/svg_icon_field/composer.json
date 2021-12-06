@@ -1,0 +1,20 @@
+{
+  "name": "drupal/svg_icon_field",
+  "type": "drupal-module",
+  "description": "This module provides a new SVG icon field.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/svg_icon_field",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Dawid Nawrot (dawid_nawrot)",
+      "homepage": "https://www.drupal.org/u/dawid_nawrot",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/svg_icon_field",
+    "source": "http://cgit.drupalcode.org/svg_icon_field"
+  }
+}

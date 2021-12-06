@@ -9,7 +9,17 @@ function visual_preprocess_region(&$variables) {
     $variables['attributes']['class'][] = 'article';
   }
 
+ if (isset($variables['region']) && $variables['region'] == 'footer4') {
+    $variables['attributes']['class'][] = 'feedback';
+  }
 
+if (isset($variables['region']) && $variables['region'] == 'featured') {
+    $variables['attributes']['class'][] = 'feature_blogs';
+  }
+
+if (isset($variables['region']) && $variables['region'] == 'main_navigation') {
+    $variables['attributes']['class'][] = 'navigate';
+  }
 
 
 }
@@ -41,6 +51,11 @@ function visual_preprocess_html__node__edit(&$variables) {
   
     $variables['#attached']['library'][] = 'visual/form-pages';
   
+}
+function visual_preprocess_page__node__edit(&$variables) {
+
+   $variables['#attached']['library'][] = 'visual/editnodepage';
+    
 }
 function visual_preprocess_page(&$variables) {
  
@@ -93,3 +108,4 @@ function visual_preprocess_menu__account(&$variables) {
     $variables['attributes']['class'][] = 'login';
   
 }
+

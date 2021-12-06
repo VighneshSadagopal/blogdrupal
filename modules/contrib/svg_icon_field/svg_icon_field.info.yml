@@ -1,0 +1,10 @@
+name: 'SVG Icon Field'
+type: module
+description: 'SVG icon field'
+core_version_requirement: ^8.8 || ^9
+package: Fields
+
+# Information added by Drupal.org packaging script on 2021-09-20
+version: '8.x-1.0-alpha8'
+project: 'svg_icon_field'
+datestamp: 1632131171

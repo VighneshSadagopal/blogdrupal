@@ -1,0 +1,22 @@
+.container {
+  height: 130vh !important; }
+  .container #block-visual-page-title {
+    display: none; }
+  .container .article {
+    width: 40% !important;
+    background-color: white;
+    text-align: center;
+    position: relative !important;
+    top: 5rem !important;
+    left: 58% !important;
+    margin-left: unset !important; }
+    @media screen and (max-width: 426px) {
+      .container .article {
+        width: 98% !important;
+        top: 12rem !important;
+        left: 1% !important; } }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      .container .article {
+        width: 85% !important;
+        top: 10rem !important;
+        left: 9% !important; } }

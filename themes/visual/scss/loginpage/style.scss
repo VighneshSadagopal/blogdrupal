@@ -12,7 +12,17 @@
 
 .container {
     .article {
+        width: 29% !important;
+        background-color: white;
+        text-align: center;
+        position: relative;
+        top: 6 rem;
+        left: 80% !important;
         height: 75vh;
+        @include mobile {
+            width: 98% !important;
+            left: 1% !important;
+        }
         ul {
             list-style: none;
             padding: unset;
@@ -24,12 +34,18 @@
         }
         .button {
             width: 64%;
+            @include tablet {
+                font-size: 25px;
+            }
         }
     }
     #user-login-form {
         padding-top: 30px;
         label {
             display: none;
+        }
+        label.option {
+            display: block;
         }
         .description {
             display: none;
@@ -38,6 +54,19 @@
             width: 60%;
             padding: 2px 7px;
             outline: none;
+            @include tablet {
+                font-size: 25px;
+            }
+        }
+        .js-form-item-persistent-login {
+            display: flex;
+            width: fit-content;
+            margin-left: 17%;
+        }
+    }
+    #block-visual-local-tasks {
+        @include tablet {
+            font-size: 25px;
         }
     }
     #user-register-form {

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '26f3a23c10021c1a95c90728578cc9974ce5ea07',
+        'reference' => '3bea545082512d4c18b88a6eff9484d692862282',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -718,7 +718,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '26f3a23c10021c1a95c90728578cc9974ce5ea07',
+            'reference' => '3bea545082512d4c18b88a6eff9484d692862282',
             'dev_requirement' => false,
         ),
         'drupal/like_and_dislike' => array(
@@ -832,6 +832,15 @@
                 0 => '9.2.10',
             ),
         ),
+        'drupal/persistent_login' => array(
+            'pretty_version' => '1.3.0',
+            'version' => '1.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/persistent_login',
+            'aliases' => array(),
+            'reference' => '8.x-1.3',
+            'dev_requirement' => false,
+        ),
         'drupal/phpmailer_smtp' => array(
             'pretty_version' => '2.0.2',
             'version' => '2.0.2.0',
@@ -858,6 +867,15 @@
             'replaced' => array(
                 0 => '9.2.10',
             ),
+        ),
+        'drupal/responsive_image_formatter_link_to_image_style' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/responsive_image_formatter_link_to_image_style',
+            'aliases' => array(),
+            'reference' => '2.0.0',
+            'dev_requirement' => false,
         ),
         'drupal/rest' => array(
             'dev_requirement' => false,
@@ -930,6 +948,15 @@
             'replaced' => array(
                 0 => '9.2.10',
             ),
+        ),
+        'drupal/svg_icon_field' => array(
+            'pretty_version' => '1.0.0-alpha8',
+            'version' => '1.0.0.0-alpha8',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/svg_icon_field',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-alpha8',
+            'dev_requirement' => false,
         ),
         'drupal/syslog' => array(
             'dev_requirement' => false,
@@ -1022,6 +1049,24 @@
             'install_path' => __DIR__ . '/../../modules/contrib/views_add_button',
             'aliases' => array(),
             'reference' => '8.x-1.8',
+            'dev_requirement' => false,
+        ),
+        'drupal/views_infinite_scroll' => array(
+            'pretty_version' => '1.9.0',
+            'version' => '1.9.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/views_infinite_scroll',
+            'aliases' => array(),
+            'reference' => '8.x-1.9',
+            'dev_requirement' => false,
+        ),
+        'drupal/views_load_more' => array(
+            'pretty_version' => '2.0.0-alpha1',
+            'version' => '2.0.0.0-alpha1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/views_load_more',
+            'aliases' => array(),
+            'reference' => '2.0.0-alpha1',
             'dev_requirement' => false,
         ),
         'drupal/views_ui' => array(

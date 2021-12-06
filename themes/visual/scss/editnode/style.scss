@@ -1,0 +1,37 @@
+@mixin mobile {
+    @media screen and (max-width: 426px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and(min-width: 427px) and(max-width: 769px) {
+        @content;
+    }
+}
+
+.container {
+    height: 130vh !important;
+    #block-visual-page-title {
+        display: none;
+    }
+    .article {
+        width: 40% !important;
+        background-color: white;
+        text-align: center;
+        position: relative !important;
+        top: 5rem !important;
+        left: 58% !important;
+        margin-left: unset !important;
+        @include mobile {
+            width: 98% !important;
+            top: 12rem !important;
+            left: 1% !important;
+        }
+        @include tablet {
+            width: 85% !important;
+            top: 10rem !important;
+            left: 9% !important;
+        }
+    }
+}

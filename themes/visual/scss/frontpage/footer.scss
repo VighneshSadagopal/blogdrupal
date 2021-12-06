@@ -13,6 +13,10 @@
         color: white;
         font-size: 15px;
     }
+    ul {
+        list-style: none;
+        margin-left: -40px;
+    }
     li {
         padding-bottom: 9px;
         a {
@@ -20,4 +24,25 @@
             text-decoration: none;
         }
     }
+    input#edit-email--2 {
+        width: 30%;
+    }
+    textarea#edit-write--2 {
+        width: 38%;
+    }
+}
+
+.feedback {
+    width: 19%;
+    @include mobile {
+        width: 35%;
+    }
+}
+
+input#edit-email {
+    width: 90%;
+}
+
+textarea#edit-write {
+    width: 91%;
 }

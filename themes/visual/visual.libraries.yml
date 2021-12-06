@@ -40,3 +40,9 @@ categorypage:
   css:
     theme:
       css/category/style.css: {}
+
+editnodepage:
+  version: VERSION
+  css:
+    theme:
+      css/editnode/style.css: {}

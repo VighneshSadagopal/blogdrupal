@@ -9,6 +9,10 @@
     width: unset;
     margin: unset;
     padding-top: 13px; }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      .container .content h1 {
+        padding-top: 22%;
+        font-size: 50px; } }
   .container .article {
     width: 45%;
     background-color: white;
@@ -20,6 +24,11 @@
       .container .article {
         width: 98%;
         left: 1%; } }
+    @media screen and (min-width: 427px) and (max-width: 769px) {
+      .container .article {
+        width: 98%;
+        left: 9%;
+        top: 10rem; } }
     .container .article .js-form-item {
       padding: 10px; }
       .container .article .js-form-item input#edit-title-0-value {
@@ -52,4 +61,16 @@
   .container #node-article-form .description {
     display: none; }
   .container #node-article-form .js-form-item-field-author-0-target-id {
+    display: none; }
+  .container #node-article-edit-form label {
+    display: none; }
+  .container #node-article-edit-form #edit-body-0-format-help {
+    display: none; }
+  .container #node-article-edit-form .form-no-label {
+    display: none; }
+  .container #node-article-edit-form .form-no-label {
+    display: none; }
+  .container #node-article-edit-form .description {
+    display: none; }
+  .container #node-article-edit-form .js-form-item-field-author-0-target-id {
     display: none; }
